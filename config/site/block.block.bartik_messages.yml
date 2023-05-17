@@ -11,7 +11,7 @@ _core:
 id: bartik_messages
 theme: bartik
 region: highlighted
-weight: -7
+weight: -9
 provider: null
 plugin: system_messages_block
 settings:
