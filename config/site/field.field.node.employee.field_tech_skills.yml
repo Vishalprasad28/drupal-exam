@@ -14,7 +14,7 @@ bundle: employee
 label: 'Tech Skills'
 description: 'Select your skills'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

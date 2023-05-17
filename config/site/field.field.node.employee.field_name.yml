@@ -12,7 +12,7 @@ bundle: employee
 label: Name
 description: 'Contains the string formatted name of the employee'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

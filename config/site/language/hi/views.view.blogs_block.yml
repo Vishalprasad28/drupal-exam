@@ -1,0 +1,17 @@
+label: 'Hindi Blog'
+display:
+  block_1:
+    display_title: 'Av AV Aaya hua Blog'
+    display_options:
+      title: 'Av Av aaya hai'
+  block_2:
+    display_title: "Employee's recent Hindi Blog"
+  page_1:
+    display_title: 'Employees Page view Hindi'
+    display_options:
+      menu:
+        title: 'Hindi Blogs'
+  default:
+    display_options:
+      title: 'Hindi Title'
+    display_title: 'Hindi Blog'

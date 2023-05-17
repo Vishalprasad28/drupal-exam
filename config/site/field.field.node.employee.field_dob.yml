@@ -14,7 +14,7 @@ bundle: employee
 label: DOB
 description: 'Provide the date of birth of the employee'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
