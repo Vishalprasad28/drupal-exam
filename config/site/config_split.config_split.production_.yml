@@ -1,0 +1,17 @@
+uuid: 7b3c7dd6-3b2d-4b68-88d4-931bac428c91
+langcode: en
+status: true
+dependencies: {  }
+id: production_
+label: 'Production '
+description: 'configuration split for the prod environment.'
+weight: 0
+folder: ../config/production
+module:
+  ckeditor5: 0
+  layout_builder: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
