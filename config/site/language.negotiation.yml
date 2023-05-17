@@ -10,6 +10,7 @@ url:
     de: de
     ru: ru
     ar: ar
+    '': null
   domains:
     en: testing.com
     hi: hi.testing.com
