@@ -3,7 +3,7 @@ _core:
 session:
   parameter: language
 url:
-  source: path_prefix
+  source: domain
   prefixes:
     en: ''
     hi: hi

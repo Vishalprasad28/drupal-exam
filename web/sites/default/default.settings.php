@@ -845,4 +845,3 @@ $databases['default']['default'] = array (
 );
 // $settings['config_sync_directory'] = 'sites/default/files/config_PSLDvcjy2rzWh9iA6-nqT7ykCO3m9BydcJb2cMJbmOJThGqexJd5EDpb1xTfbpVn38bwSuYP8Q/sync';
 $settings['config_sync_directory'] = '../config/site';
-
