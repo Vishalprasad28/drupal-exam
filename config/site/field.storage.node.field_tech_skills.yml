@@ -1,0 +1,42 @@
+uuid: 45325a0f-0621-4153-8f03-11f88fa4a57d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tech_skills
+field_name: field_tech_skills
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Drupal
+      label: Drupal
+    -
+      value: .Git
+      label: .Git
+    -
+      value: HTML
+      label: HTML
+    -
+      value: SQL
+      label: SQL
+    -
+      value: PHP
+      label: PHP
+    -
+      value: Java
+      label: Java
+    -
+      value: Symfony
+      label: Symfony
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

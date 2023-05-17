@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 59725e56-1854-4113-a07f-16f6686ff7de
+name: Drupal
+mail: vishaldemo28@gmail.com
+slogan: 'Get the Latest News WorldWide'
+page:
+  403: ''
+  404: ''
+  front: /node/64
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

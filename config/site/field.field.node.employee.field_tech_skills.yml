@@ -1,0 +1,21 @@
+uuid: 7e392c0b-5275-4f75-b990-dafecee2521e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tech_skills
+    - node.type.employee
+  module:
+    - options
+id: node.employee.field_tech_skills
+field_name: field_tech_skills
+entity_type: node
+bundle: employee
+label: 'Tech Skills'
+description: 'Select your skills'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

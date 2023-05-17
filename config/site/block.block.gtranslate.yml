@@ -1,0 +1,20 @@
+uuid: ad13f110-4035-46c0-b1e8-da749b82bf9c
+langcode: en
+status: false
+dependencies:
+  module:
+    - gtranslate
+  theme:
+    - bartik
+id: gtranslate
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: gtranslate_block
+settings:
+  id: gtranslate_block
+  label: GTranslate
+  label_display: visible
+  provider: gtranslate
+visibility: {  }

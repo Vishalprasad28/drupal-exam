@@ -1,0 +1,10 @@
+uuid: 839710c0-7fa4-4d05-9590-b038f8842574
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.employee_short_desc
+label: 'Employee short desc'
+targetEntityType: node
+cache: true
