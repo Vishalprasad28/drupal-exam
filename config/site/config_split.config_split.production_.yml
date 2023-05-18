@@ -6,12 +6,25 @@ id: production_
 label: 'Production '
 description: 'configuration split for the prod environment.'
 weight: 0
-stackable: false
-storage: null
 folder: ../config/production
 module:
   ckeditor5: 0
+  devel: 0
+  devel_generate: 0
   layout_builder: 0
 theme: {  }
-complete_list: {  }
-partial_list: {  }
+blacklist: {  }
+graylist:
+  - block.block.adminmenu
+  - block.block.bartik_breadcrumbs
+  - block.block.bartik_content
+  - block.block.bartik_main_menu
+  - block.block.bartik_messages
+  - block.block.bartik_page_title
+  - block.block.bartik_powered
+  - block.block.bartik_primary_admin_actions
+  - block.block.bartik_primary_local_tasks
+  - block.block.bartik_search_form_narrow
+  - block.block.bartik_secondary_local_tasks
+graylist_dependents: true
+graylist_skip_equal: true

@@ -66,3 +66,4 @@ package*.json
 /public
 /source
 /web/themes/custom
+privateFiles/
