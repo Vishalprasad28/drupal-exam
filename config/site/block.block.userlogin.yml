@@ -9,7 +9,7 @@ dependencies:
 id: userlogin
 theme: bartik
 region: sidebar_first
-weight: -5
+weight: -7
 provider: null
 plugin: user_login_block
 settings:

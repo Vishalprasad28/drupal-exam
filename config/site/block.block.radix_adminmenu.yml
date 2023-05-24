@@ -1,0 +1,33 @@
+uuid: 003c497d-d8ba-454c-89d0-49c5ce3a1008
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.admin-menu
+  module:
+    - system
+    - user
+  theme:
+    - radix
+id: radix_adminmenu
+theme: radix
+region: navbar_branding
+weight: -8
+provider: null
+plugin: 'system_menu_block:admin-menu'
+settings:
+  id: 'system_menu_block:admin-menu'
+  label: 'Admin Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

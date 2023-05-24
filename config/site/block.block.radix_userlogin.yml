@@ -1,0 +1,20 @@
+uuid: c9964411-138d-49fb-b04b-3fc03ea6008f
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - radix
+id: radix_userlogin
+theme: radix
+region: navbar_branding
+weight: -7
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  label_display: visible
+  provider: user
+visibility: {  }

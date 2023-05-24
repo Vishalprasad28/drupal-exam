@@ -1,0 +1,25 @@
+uuid: c3f87d21-624c-409e-a25f-7ab9f7647d95
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - radix
+id: radix_quicktabsrecentprojects
+theme: radix
+region: content
+weight: 0
+provider: null
+plugin: 'quicktabs_block:recent_projects'
+settings:
+  id: 'quicktabs_block:recent_projects'
+  label: 'Recent Projects'
+  label_display: visible
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

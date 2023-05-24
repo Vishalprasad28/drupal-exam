@@ -1,0 +1,30 @@
+uuid: 7b3c7dd6-3b2d-4b68-88d4-931bac428c91
+langcode: en
+status: true
+dependencies: {  }
+id: development
+label: Development
+description: 'configuration split for the Development environment.'
+weight: 0
+folder: ../config/development
+module:
+  ckeditor5: 0
+  devel: 0
+  devel_generate: 0
+  layout_builder: 0
+theme: {  }
+blacklist: {  }
+graylist:
+  - block.block.adminmenu
+  - block.block.bartik_breadcrumbs
+  - block.block.bartik_content
+  - block.block.bartik_main_menu
+  - block.block.bartik_messages
+  - block.block.bartik_page_title
+  - block.block.bartik_powered
+  - block.block.bartik_primary_admin_actions
+  - block.block.bartik_primary_local_tasks
+  - block.block.bartik_search_form_narrow
+  - block.block.bartik_secondary_local_tasks
+graylist_dependents: true
+graylist_skip_equal: true

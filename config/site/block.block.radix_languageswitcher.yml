@@ -1,0 +1,20 @@
+uuid: 6fd70465-0e74-4880-ab5b-2b60cabe281f
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - radix
+id: radix_languageswitcher
+theme: radix
+region: navbar_branding
+weight: -8
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: Language
+  label_display: visible
+  provider: language
+visibility: {  }

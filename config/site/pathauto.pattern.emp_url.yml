@@ -7,12 +7,12 @@ dependencies:
 id: emp_url
 label: 'Employees page url alias'
 type: 'canonical_entities:node'
-pattern: 'employee/[node:title]'
+pattern: 'employee/[node:field_name]'
 selection_criteria:
-  f0dc2c0b-bba2-4f1a-afde-678a4bdfa4b4:
+  06ade8bc-f673-473c-a52f-f2a3095e5a45:
     id: 'entity_bundle:node'
     negate: false
-    uuid: f0dc2c0b-bba2-4f1a-afde-678a4bdfa4b4
+    uuid: 06ade8bc-f673-473c-a52f-f2a3095e5a45
     context_mapping:
       node: node
     bundles:

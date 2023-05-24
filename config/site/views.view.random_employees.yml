@@ -357,6 +357,7 @@ display:
             field_name: field_name
             field_tech_skills: field_name
             field_project_name: field_name
+            nothing: field_name
           default: '-1'
           info:
             field_profile:
@@ -381,6 +382,11 @@ display:
             field_project_name:
               sortable: false
               default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            nothing:
               align: ''
               separator: ''
               empty_column: false
@@ -411,15 +417,6 @@ display:
           admin_label: field_project_team
           entity_type: node
           plugin_id: entity_reverse
-          required: false
-        field_created_by:
-          id: field_created_by
-          table: node__field_created_by
-          field: field_created_by
-          relationship: none
-          group_type: group
-          admin_label: 'field_created_by: Content'
-          plugin_id: standard
           required: false
       use_more: true
       use_more_always: true

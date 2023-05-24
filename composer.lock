@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "144d0f9d10189e713577819753eeef2c",
+    "content-hash": "18f8295fba69bcdefe62162d2f837b42",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1451,6 +1451,72 @@
             }
         },
         {
+            "name": "drupal/backup_migrate",
+            "version": "5.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/backup_migrate.git",
+                "reference": "5.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/backup_migrate-5.0.3.zip",
+                "reference": "5.0.3",
+                "shasum": "bc263f601f7a21248d4000a372d04a417df7e326"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "suggest": {
+                "defuse/php-encryption": "Optional encryption of saved backups."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "5.0.3",
+                    "datestamp": "1671366510",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/189065/committers",
+                    "role": "Developer"
+                },
+                {
+                    "name": "DamienMcKenna",
+                    "homepage": "https://www.drupal.org/user/108450"
+                },
+                {
+                    "name": "dgorton",
+                    "homepage": "https://www.drupal.org/user/19044"
+                },
+                {
+                    "name": "ikit-claw",
+                    "homepage": "https://www.drupal.org/user/3285813"
+                },
+                {
+                    "name": "ronan",
+                    "homepage": "https://www.drupal.org/user/72815"
+                }
+            ],
+            "description": "Backup and Migrate Drupal Module",
+            "homepage": "https://www.drupal.org/project/backup_migrate",
+            "support": {
+                "source": "https://git.drupalcode.org/project/backup_migrate",
+                "issues": "https://www.drupal.org/project/issues/backup_migrate",
+                "slack": "https://drupal.slack.com/messages/C7C4M4QJV/details/"
+            }
+        },
+        {
             "name": "drupal/bartik",
             "version": "1.0.2",
             "source": {
@@ -2173,6 +2239,58 @@
                 "source": "https://gitlab.com/drupalspoons/devel",
                 "issues": "https://gitlab.com/drupalspoons/devel/-/issues",
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
+            }
+        },
+        {
+            "name": "drupal/devel_kint_extras",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/devel_kint_extras.git",
+                "reference": "1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/devel_kint_extras-1.1.0.zip",
+                "reference": "1.1.0",
+                "shasum": "c9f485f6f2562710d2bd2c62f0073aa0049f5c8c"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "drupal/devel": "^4.0 || ^5.0",
+                "kint-php/kint": "^3.3 || ^4.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.1.0",
+                    "datestamp": "1663760998",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Chojnacki",
+                    "homepage": "https://www.drupal.org/u/janchojnacki"
+                },
+                {
+                    "name": "Other contributors",
+                    "homepage": "https://www.drupal.org/node/3164492/committers"
+                }
+            ],
+            "description": "Shows methods and statics available for an object when using Kint with Devel",
+            "homepage": "https://www.drupal.org/project/devel_kint_extras",
+            "support": {
+                "source": "http://git.drupal.org/project/devel_kint_extras.git",
+                "issues": "https://www.drupal.org/project/issues/devel_kint_extras",
+                "chat": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -2947,6 +3065,151 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/quicktabs",
                 "issues": "https://www.drupal.org/project/issues/quicktabs"
+            }
+        },
+        {
+            "name": "drupal/radix",
+            "version": "5.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/radix.git",
+                "reference": "5.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/radix-5.0.6.zip",
+                "reference": "5.0.6",
+                "shasum": "2247f773cd63a3ca663d7666e44c60c1a8f6440b"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9.0 || ^10"
+            },
+            "require-dev": {
+                "consolidation/robo": "^1.1.4 || ^2",
+                "drush/drush": "^10.6"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.0.6",
+                    "datestamp": "1674132329",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drush\\Commands\\radix\\": "Commands/radix/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Arshad Chummun",
+                    "homepage": "https://arshad.io",
+                    "email": "arshad@chummun.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Ng Chin Kiong",
+                    "homepage": "https://www.o8.agency",
+                    "email": "ck@o8.agency",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Sohail Lajevardi",
+                    "homepage": "https://www.drupal.org/user/571032",
+                    "email": "doxigo@gmail.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Radix is a base theme for Drupal. It has Bootstrap, Sass, BrowserSync and Font Awesome built-in.",
+            "homepage": "https://www.drupal.org/project/radix",
+            "support": {
+                "source": "https://git.drupalcode.org/project/radix",
+                "issues": "https://www.drupal.org/project/issues/radix"
+            }
+        },
+        {
+            "name": "drupal/search_api",
+            "version": "1.29.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_api.git",
+                "reference": "8.x-1.29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.29.zip",
+                "reference": "8.x-1.29",
+                "shasum": "4663abbcfe5dfc159ee0886fc6c437e998fc0653"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10.0"
+            },
+            "conflict": {
+                "drupal/search_api_solr": "2.* || 3.0 || 3.1"
+            },
+            "require-dev": {
+                "drupal/language_fallback_fix": "@dev",
+                "drupal/search_api_autocomplete": "@dev",
+                "drupal/search_api_db": "*"
+            },
+            "suggest": {
+                "drupal/facets": "Adds the ability to create faceted searches.",
+                "drupal/search_api_autocomplete": "Allows adding autocomplete suggestions to search fields.",
+                "drupal/search_api_solr": "Adds support for using Apache Solr as a backend."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.29",
+                    "datestamp": "1679910252",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Seidl",
+                    "homepage": "https://www.drupal.org/u/drunken-monkey"
+                },
+                {
+                    "name": "Nick Veenhof",
+                    "homepage": "https://www.drupal.org/u/nick_vh"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/790418/committers"
+                }
+            ],
+            "description": "Provides a generic framework for modules offering search capabilities.",
+            "homepage": "https://www.drupal.org/project/search_api",
+            "support": {
+                "source": "https://git.drupalcode.org/project/search_api",
+                "issues": "https://www.drupal.org/project/issues/search_api",
+                "irc": "irc://irc.freenode.org/drupal-search-api"
             }
         },
         {
@@ -3732,6 +3995,71 @@
                 }
             ],
             "time": "2023-04-17T16:00:45+00:00"
+        },
+        {
+            "name": "kint-php/kint",
+            "version": "4.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kint-php/kint.git",
+                "reference": "7601bfd95ccc50a1b903c2764b31d00919e8edd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kint-php/kint/zipball/7601bfd95ccc50a1b903c2764b31d00919e8edd9",
+                "reference": "7601bfd95ccc50a1b903c2764b31d00919e8edd9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpspec/prophecy-phpunit": "^2",
+                "phpunit/phpunit": "^9.0",
+                "seld/phar-utils": "^1.0",
+                "symfony/finder": "^3.0 || ^4.0 || ^5.0",
+                "vimeo/psalm": "^4.0"
+            },
+            "suggest": {
+                "kint-php/kint-helpers": "Provides extra helper functions",
+                "kint-php/kint-twig": "Provides d() and s() functions in twig templates"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "init.php"
+                ],
+                "psr-4": {
+                    "Kint\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Vollebregt",
+                    "homepage": "https://github.com/jnvsor"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/kint-php/kint/graphs/contributors"
+                }
+            ],
+            "description": "Kint - debugging tool for PHP developers",
+            "homepage": "https://kint-php.github.io/kint/",
+            "keywords": [
+                "debug",
+                "kint",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/kint-php/kint/issues",
+                "source": "https://github.com/kint-php/kint/tree/4.2.3"
+            },
+            "time": "2022-10-01T20:16:33+00:00"
         },
         {
             "name": "league/container",

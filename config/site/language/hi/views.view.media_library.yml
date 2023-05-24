@@ -1,0 +1,41 @@
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'विषय प्रति पृष्ठ'
+            items_per_page_options_all_label: '-सभी-'
+      exposed_form:
+        options:
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+      filters:
+        name:
+          expose:
+            label: नाम
+  page:
+    display_title: पृष्ठ
+    display_options:
+      fields:
+        edit_media:
+          text: 'संपादित करें'
+        delete_media:
+          text: मिटायें
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: नाम
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: नाम
+      filters:
+        name:
+          expose:
+            label: नाम

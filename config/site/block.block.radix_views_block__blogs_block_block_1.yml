@@ -1,0 +1,24 @@
+uuid: 0df07f8b-6071-4ab0-bac8-a96bf8243a66
+langcode: hi
+status: true
+dependencies:
+  config:
+    - views.view.blogs_block
+  module:
+    - views
+  theme:
+    - radix
+id: radix_views_block__blogs_block_block_1
+theme: radix
+region: navbar_branding
+weight: -7
+provider: null
+plugin: 'views_block:blogs_block-block_1'
+settings:
+  id: 'views_block:blogs_block-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

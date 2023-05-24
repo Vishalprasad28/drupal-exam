@@ -14,7 +14,7 @@ options:
     style: tabsbar
 configuration_data:
   -
-    title: ''
+    title: Project1
     weight: 0
     type: block_content
     content:
@@ -27,7 +27,7 @@ configuration_data:
         options:
           bid: 'views_block:recent_projects-block_1'
           block_title: Project1
-          display_title: true
+          display_title: false
       view_content:
         options:
           vid: block_content
@@ -37,7 +37,7 @@ configuration_data:
         options:
           machine_name: ''
   -
-    title: ''
+    title: Project2
     weight: 0
     type: block_content
     content:
@@ -50,7 +50,7 @@ configuration_data:
         options:
           bid: 'views_block:recent_projects-block_2'
           block_title: Project2
-          display_title: true
+          display_title: false
       view_content:
         options:
           vid: block_content
@@ -60,7 +60,7 @@ configuration_data:
         options:
           machine_name: ''
   -
-    title: ''
+    title: Project3
     weight: 0
     type: block_content
     content:
@@ -73,7 +73,7 @@ configuration_data:
         options:
           bid: 'views_block:recent_projects-block_3'
           block_title: Project3
-          display_title: true
+          display_title: false
       view_content:
         options:
           vid: block_content
@@ -83,7 +83,7 @@ configuration_data:
         options:
           machine_name: ''
   -
-    title: ''
+    title: Project4
     weight: 0
     type: block_content
     content:
@@ -96,7 +96,7 @@ configuration_data:
         options:
           bid: 'views_block:recent_projects-block_4'
           block_title: Project4
-          display_title: true
+          display_title: false
       view_content:
         options:
           vid: block_content

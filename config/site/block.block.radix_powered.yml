@@ -1,0 +1,22 @@
+uuid: 6ea28050-511a-4275-a693-74a3a0285fa5
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - radix
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: radix_powered
+theme: radix
+region: header
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by me'
+  label_display: visible
+  provider: system
+visibility: {  }

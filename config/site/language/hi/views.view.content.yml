@@ -1,0 +1,25 @@
+display:
+  default:
+    display_title: डीफॉल्ट
+    display_options:
+      fields:
+        title:
+          label: शीर्षक
+        status:
+          label: अवस्था
+        operations:
+          label: कार्यवाही
+      exposed_form:
+        options:
+          reset_button_label: 'दोबारा से स्थापित करें|'
+          exposed_sorts_label: 'क्रमबद्ध द्वारा'
+          sort_desc_label: अवरोही
+      filters:
+        title:
+          expose:
+            label: शीर्षक
+        status:
+          expose:
+            label: अवस्था
+  page_1:
+    display_title: पृष्ठ
