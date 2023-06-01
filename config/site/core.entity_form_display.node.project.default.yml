@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.project.field_customer
-    - field.field.node.project.field_project_name
     - field.field.node.project.field_project_team
     - field.field.node.project.field_project_thumbnail
     - field.field.node.project.field_start_date
@@ -28,14 +27,6 @@ content:
   field_customer:
     type: string_textfield
     weight: 122
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_project_name:
-    type: string_textfield
-    weight: 121
     region: content
     settings:
       size: 60
@@ -106,6 +97,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

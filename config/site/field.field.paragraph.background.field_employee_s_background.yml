@@ -1,0 +1,37 @@
+uuid: cec5c1b0-c6c2-4676-af95-0cab889b2faa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_employee_s_background
+    - paragraphs.paragraphs_type.background
+    - paragraphs.paragraphs_type.icon_title
+  module:
+    - entity_reference_revisions
+id: paragraph.background.field_employee_s_background
+field_name: field_employee_s_background
+entity_type: paragraph
+bundle: background
+label: "employee's background"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      icon_title: icon_title
+    negate: 0
+    target_bundles_drag_drop:
+      background:
+        weight: 4
+        enabled: false
+      first_paragraph:
+        weight: 5
+        enabled: false
+      icon_title:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

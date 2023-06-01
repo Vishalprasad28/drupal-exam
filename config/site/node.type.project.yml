@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: Project
 type: project
-description: ''
+description: 'Contains the projects details that are being worked upon by the employees'
 help: ''
 new_revision: true
 preview_mode: 1

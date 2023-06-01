@@ -1,0 +1,17 @@
+uuid: 72a4d9ad-9784-4af9-b770-b580eceb2a8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - node
+id: blogger
+label: Blogger
+weight: 5
+is_admin: null
+permissions:
+  - 'edit any article content'
+  - 'edit own article content'
+  - 'revert article revisions'
+  - 'view article revisions'

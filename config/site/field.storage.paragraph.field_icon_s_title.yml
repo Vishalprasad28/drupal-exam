@@ -1,15 +1,15 @@
-uuid: 96ee6bed-4ad2-429e-98c2-9aa49585aa76
+uuid: 16d5af7b-896f-4b61-8775-a9f8ff312ea7
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-id: node.field_project_name
-field_name: field_project_name
-entity_type: node
+    - paragraphs
+id: paragraph.field_icon_s_title
+field_name: field_icon_s_title
+entity_type: paragraph
 type: string
 settings:
-  max_length: 100
+  max_length: 50
   case_sensitive: false
   is_ascii: false
 module: core

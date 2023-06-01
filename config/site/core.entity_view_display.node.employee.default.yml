@@ -12,9 +12,10 @@ dependencies:
     - field.field.node.employee.field_salary
     - field.field.node.employee.field_tech_skills
     - field.field.node.employee.field_title
+    - image.style.large
     - node.type.employee
   module:
-    - datetime
+    - age_field_formatter
     - image
     - options
     - text
@@ -32,11 +33,12 @@ content:
     weight: 8
     region: content
   field_dob:
-    type: datetime_default
-    label: above
+    type: age_field_formatter
+    label: inline
     settings:
-      timezone_override: ''
-      format_type: medium
+      age_format: age_only
+      year_suffix: '1'
+      date_format: 'Y-m-d\TH:i:s'
     third_party_settings: {  }
     weight: 3
     region: content
@@ -49,7 +51,7 @@ content:
     region: content
   field_name:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -57,7 +59,7 @@ content:
     region: content
   field_organization:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -65,10 +67,10 @@ content:
     region: content
   field_profile:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: large
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -76,7 +78,7 @@ content:
     region: content
   field_salary:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -84,14 +86,14 @@ content:
     region: content
   field_tech_skills:
     type: list_default
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     weight: 6
     region: content
   field_title:
     type: text_default
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     weight: 2
@@ -103,3 +105,4 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

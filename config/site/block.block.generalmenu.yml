@@ -1,0 +1,25 @@
+uuid: fb7acdf7-9ab9-4016-a5b4-8b5e2a9d4596
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.general-menu
+  module:
+    - system
+  theme:
+    - bartik
+id: generalmenu
+theme: bartik
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:general-menu'
+settings:
+  id: 'system_menu_block:general-menu'
+  label: 'General Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
