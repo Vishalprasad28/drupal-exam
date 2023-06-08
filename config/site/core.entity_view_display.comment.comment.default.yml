@@ -22,22 +22,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
-    region: content
-  field_email:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
     weight: 1
-    region: content
-  field_homepage:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 2
     region: content
   field_your_name:
     type: string
@@ -50,7 +35,10 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 2
     region: content
 hidden:
+  field_email: true
+  field_homepage: true
   langcode: true
+  search_api_excerpt: true

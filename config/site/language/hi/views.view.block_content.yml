@@ -3,6 +3,10 @@ display:
     display_title: डीफॉल्ट
     display_options:
       fields:
+        info:
+          separator: ', '
+        type:
+          separator: ', '
         operations:
           label: कार्यवाही
       pager:
@@ -12,6 +16,7 @@ display:
             items_per_page_options_all_label: '-सभी-'
       exposed_form:
         options:
+          submit_button: 'लागू करें'
           reset_button_label: 'दोबारा से स्थापित करें|'
           exposed_sorts_label: 'क्रमबद्ध द्वारा'
           sort_desc_label: अवरोही

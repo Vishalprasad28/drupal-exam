@@ -5,10 +5,14 @@ display:
       fields:
         status:
           label: अवस्था
+          settings:
+            format_custom_true: सक्रिय
         roles_target_id:
           label: भूमिका
         operations:
           label: कार्यवाही
+        mail:
+          separator: ', '
       pager:
         options:
           expose:
@@ -23,5 +27,11 @@ display:
         status:
           group_info:
             label: अवस्था
+            group_items:
+              1:
+                title: सक्रिय
+        roles_target_id:
+          expose:
+            label: भूमिका
   page_1:
     display_title: पृष्ठ

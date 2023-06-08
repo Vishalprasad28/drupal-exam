@@ -1,4 +1,4 @@
-uuid: b96abc2a-a4b6-4ca0-8f68-8293364d475d
+uuid: cdc50baf-aca6-443c-bcfc-8ba403f8574d
 langcode: en
 status: true
 dependencies:
@@ -12,19 +12,19 @@ dependencies:
 id: views_block__recent_project_of_employee_block_1
 theme: bartik
 region: sidebar_second
-weight: 0
+weight: -8
 provider: null
 plugin: 'views_block:recent_project_of_employee-block_1'
 settings:
   id: 'views_block:recent_project_of_employee-block_1'
-  label: 'Recent Project'
+  label: 'Recent Projects'
   label_display: visible
   provider: views
   context_mapping: {  }
-  views_label: 'Recent Project'
+  views_label: 'Recent Projects'
   items_per_page: none
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/employee/*'
+    pages: '/employees/*'

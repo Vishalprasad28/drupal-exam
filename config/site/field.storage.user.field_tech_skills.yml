@@ -1,0 +1,42 @@
+uuid: c805549b-d23c-409a-9291-5974218d9612
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_tech_skills
+field_name: field_tech_skills
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Drupal
+      label: Drupal
+    -
+      value: HTML
+      label: HTML
+    -
+      value: CSS
+      label: CSS
+    -
+      value: Git
+      label: Git
+    -
+      value: React
+      label: React
+    -
+      value: 'Node Js'
+      label: 'Node Js'
+    -
+      value: Wordpress
+      label: Wordpress
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

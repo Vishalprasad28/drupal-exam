@@ -1,0 +1,19 @@
+uuid: 63f7d40e-5515-465e-8c3f-f1433fed0157
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_key_characteristics
+field_name: field_key_characteristics
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

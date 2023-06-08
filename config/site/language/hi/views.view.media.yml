@@ -3,10 +3,20 @@ display:
     display_title: डीफॉल्ट
     display_options:
       fields:
+        thumbnail__target_id:
+          separator: ', '
+        name:
+          separator: ', '
         bundle:
           label: प्रकार
+          separator: ', '
+        uid:
+          separator: ', '
         status:
           label: अवस्था
+          separator: ', '
+        changed:
+          separator: ', '
         operations:
           label: कार्यवाही
       pager:
@@ -23,3 +33,6 @@ display:
         bundle:
           expose:
             label: प्रकार
+        langcode:
+          expose:
+            label: भाषा

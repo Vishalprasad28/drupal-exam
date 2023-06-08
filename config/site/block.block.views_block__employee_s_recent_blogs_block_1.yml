@@ -1,4 +1,4 @@
-uuid: 6580ae74-3136-48d1-9356-f573881200b9
+uuid: e7ac9c98-5bad-460a-a51c-21fd978b4d7c
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: views_block__employee_s_recent_blogs_block_1
 theme: bartik
 region: sidebar_second
-weight: 0
+weight: -10
 provider: null
 plugin: 'views_block:employee_s_recent_blogs-block_1'
 settings:
@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/employee/*'
+    pages: /home

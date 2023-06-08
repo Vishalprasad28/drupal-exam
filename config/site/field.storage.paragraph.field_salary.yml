@@ -1,0 +1,20 @@
+uuid: 34812b43-a7c5-4c31-a955-70527ce7a035
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_salary
+field_name: field_salary
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -3,10 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.project.field_associated_employees
     - field.field.node.project.field_customer
-    - field.field.node.project.field_project_team
     - field.field.node.project.field_project_thumbnail
     - field.field.node.project.field_start_date
+    - image.style.large
     - node.type.project
   module:
     - datetime
@@ -17,19 +18,19 @@ targetEntityType: node
 bundle: project
 mode: default
 content:
+  field_associated_employees:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_customer:
     type: string
     label: above
     settings:
       link_to_entity: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_project_team:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
     third_party_settings: {  }
     weight: 1
     region: content
@@ -38,25 +39,25 @@ content:
     label: above
     settings:
       image_link: ''
-      image_style: ''
+      image_style: large
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 3
+    weight: 0
     region: content
   field_start_date:
     type: datetime_default
     label: above
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: html_date
     third_party_settings: {  }
-    weight: 2
+    weight: 5
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
 hidden:
   langcode: true

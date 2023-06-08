@@ -1,22 +1,21 @@
-uuid: 6d8c7cdf-7e43-4503-8769-8b6a85315031
+uuid: ea1df06f-65e5-4e7c-a62f-f99da2bec964
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_key_characteristics
-    - field.storage.node.field_name
-    - node.type.employee
+    - field.storage.user.field_key_characteristics
+    - user.role.employee
   module:
     - node
     - text
     - user
 id: teams_page
-label: 'Teams page'
+label: 'Teams Page'
 module: views
 description: ''
 tag: ''
-base_table: node_field_data
-base_field: nid
+base_table: users_field_data
+base_field: uid
 display:
   default:
     id: default
@@ -24,15 +23,17 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Teams page'
+      title: 'Teams Page'
       fields:
-        field_name:
-          id: field_name
-          table: node__field_name
-          field: field_name
+        name:
+          id: name
+          table: users_field_data
+          field: name
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: name
           plugin_id: field
           label: ''
           exclude: false
@@ -54,8 +55,8 @@ display:
             target: ''
             nl2br: false
             max_length: 0
-            word_boundary: true
-            ellipsis: true
+            word_boundary: false
+            ellipsis: false
             more_link: false
             more_link_text: ''
             more_link_path: ''
@@ -76,7 +77,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
+          type: user_name
           settings:
             link_to_entity: true
           group_column: value
@@ -91,7 +92,7 @@ display:
           field_api_classes: false
         field_key_characteristics:
           id: field_key_characteristics
-          table: node__field_key_characteristics
+          table: user__field_key_characteristics
           field: field_key_characteristics
           relationship: none
           group_type: group
@@ -141,7 +142,7 @@ display:
           click_sort_column: value
           type: text_trimmed
           settings:
-            trim_length: 200
+            trim_length: 600
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -152,14 +153,14 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        view_node:
-          id: view_node
-          table: node
-          field: view_node
+        view_user:
+          id: view_user
+          table: users
+          field: view_user
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
+          entity_type: user
           plugin_id: entity_link
           label: ''
           exclude: false
@@ -191,10 +192,10 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: Learn-more-team-btn
+          element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -206,17 +207,15 @@ display:
           output_url_as_text: false
           absolute: false
       pager:
-        type: full
+        type: mini
         options:
           offset: 0
-          items_per_page: 4
+          items_per_page: 10
           total_pages: null
           id: 0
           tags:
             next: ››
             previous: ‹‹
-            first: '« First'
-            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -225,7 +224,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -239,34 +237,18 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'access user profiles'
       cache:
         type: tag
         options: {  }
       empty: {  }
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
+      sorts: {  }
       arguments:
         title:
           id: title
           table: node_field_data
           field: title
-          relationship: reverse__node__field_project_team
+          relationship: reverse__node__field_associated_employees
           group_type: group
           admin_label: ''
           entity_type: node
@@ -305,24 +287,58 @@ display:
       filters:
         status:
           id: status
-          table: node_field_data
+          table: users_field_data
           field: status
-          entity_type: node
+          entity_type: user
           entity_field: status
           plugin_id: boolean
           value: '1'
           group: 1
           expose:
             operator: ''
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
+        roles_target_id:
+          id: roles_target_id
+          table: user__roles
+          field: roles_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: user
+          entity_field: roles
+          plugin_id: user_roles
+          operator: or
           value:
             employee: employee
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
       style:
         type: table
         options:
@@ -330,12 +346,12 @@ display:
           row_class: ''
           default_row_class: true
           columns:
-            field_name: field_name
+            name: name
             field_key_characteristics: field_key_characteristics
-            view_node: field_key_characteristics
+            view_user: field_key_characteristics
           default: '-1'
           info:
-            field_name:
+            name:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -346,10 +362,10 @@ display:
               sortable: false
               default_sort_order: asc
               align: ''
-              separator: '<br>'
+              separator: ''
               empty_column: false
               responsive: ''
-            view_node:
+            view_user:
               sortable: false
               default_sort_order: asc
               align: ''
@@ -373,22 +389,17 @@ display:
           replica: false
           query_tags: {  }
       relationships:
-        reverse__node__field_project_team:
-          id: reverse__node__field_project_team
-          table: node_field_data
-          field: reverse__node__field_project_team
+        reverse__node__field_associated_employees:
+          id: reverse__node__field_associated_employees
+          table: users_field_data
+          field: reverse__node__field_associated_employees
           relationship: none
           group_type: group
-          admin_label: field_project_team
-          entity_type: node
+          admin_label: field_associated_employees
+          entity_type: user
           plugin_id: entity_reverse
-          required: false
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          plugin_id: text
+          required: true
+      header: {  }
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -398,11 +409,9 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_key_characteristics'
-        - 'config:field.storage.node.field_name'
+        - 'config:field.storage.user.field_key_characteristics'
   page_1:
     id: page_1
     display_title: Page
@@ -418,8 +427,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_key_characteristics'
-        - 'config:field.storage.node.field_name'
+        - 'config:field.storage.user.field_key_characteristics'

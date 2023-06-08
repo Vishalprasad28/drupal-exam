@@ -1,0 +1,264 @@
+uuid: c5db8627-2a96-40f3-8c00-aa8dee1a5895
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.full
+    - field.field.user.user.field_background
+    - field.field.user.user.field_goals
+    - field.field.user.user.field_key_characteristics
+    - field.field.user.user.field_name
+    - field.field.user.user.field_tech_skills
+    - field.field.user.user.field_title
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - entity_reference_revisions
+    - field_group
+    - image
+    - layout_builder
+    - layout_discovery
+    - options
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_details:
+      children:
+        - field_name
+        - field_title
+      label: Details
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: true
+        description: ''
+        required_fields: false
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          8b23d815-2738-4848-a4f9-a7dcff49a304:
+            uuid: 8b23d815-2738-4848-a4f9-a7dcff49a304
+            region: first
+            configuration:
+              id: 'field_block:user:user:field_title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          f1852a6b-24bb-4341-b127-2545a1fa9191:
+            uuid: f1852a6b-24bb-4341-b127-2545a1fa9191
+            region: first
+            configuration:
+              id: 'field_block:user:user:field_background'
+              label: Background
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          315fd516-2b88-4b0e-b42a-5cefb340f48c:
+            uuid: 315fd516-2b88-4b0e-b42a-5cefb340f48c
+            region: second
+            configuration:
+              id: 'field_block:user:user:user_picture'
+              label: Picture
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          03083a8c-8cb1-474e-941e-4acdb0684994:
+            uuid: 03083a8c-8cb1-474e-941e-4acdb0684994
+            region: first
+            configuration:
+              id: 'field_block:user:user:field_name'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          d4efdeda-f3c5-436e-89f3-027068697abe:
+            uuid: d4efdeda-f3c5-436e-89f3-027068697abe
+            region: first
+            configuration:
+              id: 'field_block:user:user:field_tech_skills'
+              label: 'Tech SKills'
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: list_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          42a41f17-1786-4f08-833d-956f7619090a:
+            uuid: 42a41f17-1786-4f08-833d-956f7619090a
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_key_characteristics'
+              label: 'Key Characteristics'
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          52816fd5-59e5-4c62-97f2-200395b96fdb:
+            uuid: 52816fd5-59e5-4c62-97f2-200395b96fdb
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_goals'
+              label: Goals
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.full
+targetEntityType: user
+bundle: user
+mode: full
+content:
+  field_background:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_goals:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_key_characteristics:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_tech_skills:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

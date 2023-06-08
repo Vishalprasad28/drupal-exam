@@ -4,36 +4,27 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_associated_employees
     - field.field.node.project.field_customer
-    - field.field.node.project.field_project_team
     - field.field.node.project.field_project_thumbnail
     - field.field.node.project.field_start_date
     - node.type.project
   module:
-    - datetime
     - user
 id: node.project.teaser
 targetEntityType: node
 bundle: project
 mode: teaser
 content:
-  field_start_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 1
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  field_associated_employees: true
   field_customer: true
-  field_project_team: true
   field_project_thumbnail: true
+  field_start_date: true
   langcode: true
   search_api_excerpt: true

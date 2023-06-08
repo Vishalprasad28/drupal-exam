@@ -1,4 +1,4 @@
-uuid: 330cb6ee-bfd2-432a-85e4-6298e1b663e6
+uuid: 21d97961-4fc9-4a29-b9b9-ee9d2cac43f9
 langcode: en
 status: true
 dependencies:
@@ -10,12 +10,12 @@ dependencies:
 id: quicktabsrecentprojects
 theme: bartik
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: 'quicktabs_block:recent_projects'
 settings:
   id: 'quicktabs_block:recent_projects'
-  label: 'Recent Projects'
+  label: ' Recent Projects'
   label_display: visible
   provider: quicktabs
 visibility:

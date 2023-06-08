@@ -1,0 +1,14 @@
+uuid: ba7f6d48-c978-4502-b607-080dadce43c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: employee_page
+label: 'Employee page'
+type: 'canonical_entities:user'
+pattern: 'employees/[user:display-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

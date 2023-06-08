@@ -3,23 +3,42 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.background.field_employee_s_background
+    - field.field.paragraph.background.field_company
+    - field.field.paragraph.background.field_dob
+    - field.field.paragraph.background.field_salary
     - paragraphs.paragraphs_type.background
   module:
-    - entity_reference_revisions
+    - datetime
+    - text
 id: paragraph.background.default
 targetEntityType: paragraph
 bundle: background
 mode: default
 content:
-  field_employee_s_background:
-    type: entity_reference_revisions_entity_view
-    label: above
+  field_company:
+    type: text_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_dob:
+    type: datetime_default
+    label: inline
     settings:
-      view_mode: default
-      link: ''
+      timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_salary:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   search_api_excerpt: true

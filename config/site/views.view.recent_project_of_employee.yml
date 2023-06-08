@@ -111,10 +111,10 @@ display:
           exposed: false
           granularity: second
       arguments:
-        field_project_team_target_id:
-          id: field_project_team_target_id
-          table: node__field_project_team
-          field: field_project_team_target_id
+        field_associated_employees_target_id:
+          id: field_associated_employees_target_id
+          table: node__field_associated_employees
+          field: field_associated_employees_target_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -126,8 +126,9 @@ display:
             title: All
           title_enable: false
           title: ''
-          default_argument_type: node
-          default_argument_options: {  }
+          default_argument_type: user
+          default_argument_options:
+            user: false
           default_argument_skip_url: false
           summary_options:
             base_path: ''
@@ -178,7 +179,16 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        field_associated_employees:
+          id: field_associated_employees
+          table: node__field_associated_employees
+          field: field_associated_employees
+          relationship: none
+          group_type: group
+          admin_label: 'field_associated_employees: User'
+          plugin_id: standard
+          required: true
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -198,6 +208,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

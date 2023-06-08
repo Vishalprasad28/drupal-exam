@@ -1,0 +1,23 @@
+uuid: 5e36ca9b-010e-4674-b535-a156194de6e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_salary
+    - paragraphs.paragraphs_type.background
+id: paragraph.background.field_salary
+field_name: field_salary
+entity_type: paragraph
+bundle: background
+label: Salary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10
+  max: 100
+  prefix: ''
+  suffix: k/Year
+field_type: integer

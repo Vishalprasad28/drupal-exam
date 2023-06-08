@@ -1,0 +1,21 @@
+uuid: 5acaf1a4-8938-4fbb-9738-423daccca049
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_goals
+  module:
+    - text
+    - user
+id: user.user.field_goals
+field_name: field_goals
+entity_type: user
+bundle: user
+label: Goals
+description: 'Goals of the Employees'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

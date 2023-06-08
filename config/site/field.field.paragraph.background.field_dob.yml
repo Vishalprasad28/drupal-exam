@@ -1,0 +1,21 @@
+uuid: 3b3dd6d1-573d-43ed-9d71-347fa0584f5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_dob
+    - paragraphs.paragraphs_type.background
+  module:
+    - datetime
+id: paragraph.background.field_dob
+field_name: field_dob
+entity_type: paragraph
+bundle: background
+label: DOB
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

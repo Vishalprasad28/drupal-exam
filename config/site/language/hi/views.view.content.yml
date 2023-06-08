@@ -5,6 +5,8 @@ display:
       fields:
         title:
           label: शीर्षक
+        type:
+          separator: ', '
         status:
           label: अवस्था
         operations:
@@ -21,5 +23,8 @@ display:
         status:
           expose:
             label: अवस्था
+        langcode:
+          expose:
+            label: भाषा
   page_1:
     display_title: पृष्ठ

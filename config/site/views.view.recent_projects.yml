@@ -280,7 +280,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: 'start Date'
+          label: ''
           exclude: false
           alter:
             alter_text: false
@@ -313,7 +313,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -325,7 +325,7 @@ display:
           type: datetime_default
           settings:
             timezone_override: ''
-            format_type: medium
+            format_type: html_date
           group_column: value
           group_columns: {  }
           group_rows: true

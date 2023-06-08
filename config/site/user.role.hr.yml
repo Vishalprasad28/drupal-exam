@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.employee
     - node.type.project
   module:
     - block
@@ -14,9 +13,15 @@ label: HR
 weight: 4
 is_admin: null
 permissions:
+  - 'access user profiles'
+  - 'administer account settings'
   - 'administer blocks'
   - 'administer comment types'
   - 'administer comments'
-  - 'edit any employee content'
+  - 'administer permissions'
+  - 'administer users'
+  - 'cancel account'
+  - 'change own username'
   - 'edit any project content'
-  - 'view employee revisions'
+  - 'select account cancellation method'
+  - 'view user email addresses'

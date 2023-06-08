@@ -1,0 +1,19 @@
+uuid: f7de006d-538c-43d0-9694-afc7f145d772
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+  module:
+    - node
+id: employee
+label: Employee
+weight: 6
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'create article content'
+  - 'delete own article content'
+  - 'edit own article content'
+  - 'revert article revisions'
+  - 'view article revisions'

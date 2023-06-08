@@ -5,6 +5,7 @@ display:
       fields:
         filename:
           label: नाम
+          separator: ', '
         status:
           label: अवस्था
       pager:
@@ -31,3 +32,7 @@ display:
           expose:
             items_per_page_label: 'विषय प्रति पृष्ठ'
             items_per_page_options_all_label: '-सभी-'
+      arguments:
+        fid:
+          exception:
+            title: सभी

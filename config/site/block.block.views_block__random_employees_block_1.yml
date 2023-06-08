@@ -1,4 +1,4 @@
-uuid: 6a36f98b-3931-4d84-ac77-dce2bbc83549
+uuid: 970547e2-55c4-4b49-b082-bd3fab40e5e7
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: views_block__random_employees_block_1
 theme: bartik
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: 'views_block:random_employees-block_1'
 settings:

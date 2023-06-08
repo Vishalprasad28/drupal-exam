@@ -4,6 +4,9 @@ display:
     display_options:
       pager:
         options:
+          tags:
+            next: ››
+            previous: ‹‹
           expose:
             items_per_page_label: 'विषय प्रति पृष्ठ'
             items_per_page_options_all_label: '-सभी-'
@@ -16,16 +19,25 @@ display:
         name:
           expose:
             label: नाम
+        langcode:
+          expose:
+            label: भाषा
   page:
     display_title: पृष्ठ
     display_options:
       fields:
+        name:
+          separator: ', '
         edit_media:
           text: 'संपादित करें'
         delete_media:
           text: मिटायें
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: सभी
       filters:
         name:
           expose:
@@ -35,6 +47,10 @@ display:
       fields:
         name:
           label: नाम
+      arguments:
+        bundle:
+          exception:
+            title: सभी
       filters:
         name:
           expose:
