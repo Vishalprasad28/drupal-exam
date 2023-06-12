@@ -1,0 +1,22 @@
+uuid: 60a5d27d-e2e1-4216-b9f0-c7abcfdc1f6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: blogs_styling
+label: 'blogs styling'
+code: |-
+  .blogs-page {
+  	 background-color: rgba(0,0,0,0.1);
+  	 padding: 0.5rem;
+  }
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /blogs
+contexts: {  }
+conditions_require_all: true

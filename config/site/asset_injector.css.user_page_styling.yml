@@ -1,0 +1,21 @@
+uuid: 664bb5ae-2cbe-4a6d-a34d-079a76b4217a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: user_page_styling
+label: 'user page styling'
+code: |-
+  .block-field-blockuseruserfield-background, .field--name-field-title, .block-field-blockuseruserfield-tech-skills, .block-field-blockuseruserfield-key-characteristics{
+  	border-bottom: 1px solid black;
+  }
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/employees/*'
+contexts: {  }
+conditions_require_all: true

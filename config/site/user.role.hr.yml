@@ -7,7 +7,10 @@ dependencies:
   module:
     - block
     - comment
+    - field_permissions
+    - field_ui
     - node
+    - taxonomy
 id: hr
 label: HR
 weight: 4
@@ -18,10 +21,23 @@ permissions:
   - 'administer blocks'
   - 'administer comment types'
   - 'administer comments'
+  - 'administer field permissions'
   - 'administer permissions'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term fields'
+  - 'administer user display'
+  - 'administer user fields'
+  - 'administer user form display'
   - 'administer users'
   - 'cancel account'
   - 'change own username'
+  - 'create project content'
+  - 'delete any project content'
+  - 'delete own project content'
+  - 'delete project revisions'
   - 'edit any project content'
+  - 'edit own project content'
+  - 'revert project revisions'
   - 'select account cancellation method'
+  - 'view project revisions'
   - 'view user email addresses'

@@ -33,5 +33,8 @@ display:
         roles_target_id:
           expose:
             label: भूमिका
+        permission:
+          expose:
+            label: अनुमति
   page_1:
     display_title: पृष्ठ

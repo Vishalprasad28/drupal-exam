@@ -19,6 +19,9 @@ display:
           exposed_sorts_label: 'क्रमबद्ध द्वारा'
           sort_desc_label: अवरोही
       filters:
+        filename:
+          expose:
+            label: 'फ़ाइल का नाम'
         status:
           expose:
             label: अवस्था
